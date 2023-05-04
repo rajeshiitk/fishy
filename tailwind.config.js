@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./build/*.html", "./build/js/*.js"],
-  // content:[""],
+  // content: ["./build/*.html", "./build/js/*.js"],
+  content:["./builf/**/*.{html,js}"],
   theme: {
     extend: {
       backgroundImage: {
@@ -10,7 +10,7 @@ module.exports = {
       },
       screens:{
         'wideScreen':{'raw':'(min-aspect-ratio:3/2)'},
-        'tallScreen':{'raw':'(min-aspect-ratio:13/20)'},
+        'tallScreen':{'raw':'(max-aspect-ratio:13/20)'},
       },
       keyframes:{
        'open-menu':{
