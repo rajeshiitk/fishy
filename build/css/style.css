@@ -980,10 +980,6 @@ video {
   -webkit-line-clamp: 3;
 }
 
-.container-fluid{
-  width: 100vw;
-}
-
 .toggle-btn>div::after {
   --tw-translate-y: 0px;
   --tw-rotate: -45deg;
@@ -998,6 +994,10 @@ video {
 
 .toggle-btn>div {
   background-color: transparent;
+}
+
+.container-fluid{
+  width: 100vw;
 }
 
 .before\:absolute::before {
