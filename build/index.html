@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/e62294c5aa.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+
 
     <title>Fishy</title>
 </head>
@@ -19,9 +21,30 @@
                     <a href="#hero"> Fishy 🦈</a>
                 </h1>
                 <div>
-                    <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none"><i
-                            class="fa-solid fa-bars"></i></button>
-                    <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+                    <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8">
+                        <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 before:content-[''] before:bg-white
+                        before:w-8
+                         before:h-1
+                         before:absolute
+                         before:rounded
+                         before:-translate-x-4
+                         before:-translate-y-3
+                         before:transition-all
+                         before:duration-500
+                         after:content-[''] after:bg-white
+                         after:w-8
+                         after:h-1
+                         after:absolute
+                         after:rounded
+                         after:-translate-x-4
+                         after:translate-y-3
+                         after:transition-all
+                         after:duration-500
+                        "></div>
+                        <!-- <i
+                            class="fa-solid fa-bars"></i> -->
+                        </button>
+                    <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
                         <a href="#species" class="hover:opacity-90">Species</a>
                         <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
                         <a href="#contact" class="hover:opacity-90">Contact</a>
@@ -29,7 +52,18 @@
                         <a href="#signUp" class="hover:opacity-90">Sign Up</a>
                     </nav>
                 </div>
-
+            </section>
+            <section id="mobile-menu" class="absolute top-68 bg-black text-5xl w-full flex-col justify-center md:none origin-top animate-open-menu hidden">
+                <!-- <button class="text-8xl  w-full px-6">
+                    &times;
+                </button> -->
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="http:#hero" class="w-full text-center py-6 hover:opacity-90">Home</a>
+                <a href="http:#species" class="w-full text-center py-6 hover:opacity-90">Species</a>
+                <a href="http:#testimonials" class="w-full text-center py-6 hover:opacity-90">What they said</a>
+                <a href="http:#contact" class="w-full text-center py-6 hover:opacity-90">Contact Us</a>
+                <a href="http:#footer" class="w-full text-center py-6 hover:opacity-90">Address</a>
+            </nav>
             </section>
         </header>
     </div>
@@ -64,7 +98,7 @@
                 dark:border-gray-100  bg-white py-6 px-2 rounded-3xl shadow-xl mx-4 dark:bg-black">
                     <img src="./img/DALL·E 2023-05-02 09.28.54 - 3D render of a cute tropical fish in an aquarium on a dark blue background, digital art.png"
                         alt="" class="w-1/2 mb-6 rounded-full shadow-2xl ">
-                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">clownfish</h3>
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">Clownfish</h3>
                     <p
                         class="text-3xl hidden sm:block text-center mt-2 text-slate-500 dark:text-slate-400 sm:line-clamp-4 hover:line-clamp-none">
                         It made famous by the movie "Finding Nemo," is immune to the venomous sting of sea anemones.</p>
