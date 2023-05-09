@@ -54,19 +54,21 @@
         </header>
     </div>
     <div class="container max-w-6xl flex py-16 ">
-        <form action="" id="login"
-            class="cursor-pointer mx-auto max-w-lg  flex flex-col dark:bg-slate-200 border border-slate-300 gap-4 min-h-fit shadow-lg rounded-xl p-4">
+        <div class="mx-auto max-w-lg min-w-[240px] flex flex-col dark:bg-slate-200 border border-slate-300 gap-4 min-h-fit shadow-lg rounded-xl p-4">
             <div class="flex gap-2 ">
-                <span class="w-1/2 bg-purple-900 px-2 rounded-full grid place-items-center">
-                    <h1 class="font-bold text-white  ">Login</h1>
+                <span id="login" class="w-1/2 bg-purple-900 cursor-pointer p-1 rounded-full grid place-items-center">
+                    <h1 class="font-bold text-white  child  ">Login</h1>
                 </span>
-                <span class="w-1/2">
-                    <h2 class="font-bold text-slate-900">Sign Up</h2>
+                <span id="sign-up" class="w-1/2 cursor-pointer  p-1 rounded-full grid place-items-center">
+                    <h2 class="font-bold  child">Sign Up</h2>
                 </span>
             </div>
-            <input type="email" name="email" id="email" placeholder="Email" class="p-1 focus:outline-purple-900"
+        <form action="" id="login-form"
+            class="cursor-pointer mx-auto max-w-lg  flex flex-col dark:bg-slate-200  gap-4 rounded-xl p-4">
+            
+            <input type="email" name="emaillog" id="emaillog" placeholder="Email" class="p-1 focus:outline-purple-900"
                 required />
-            <input type="password" name="password" id="password" placeholder="Password"
+            <input type="password" name="passwordlog" id="passwordlog" placeholder="Password"
                 class="p-1 focus:outline-purple-900 " required />
 
 
@@ -76,16 +78,9 @@
             </button>
             <p class="self-end px-2">New User? <a href="" id="new-user" class="text-purple-900 font-bold">Sign Up</a></p>
         </form>
-        <form action="" id="sign-up"
-            class="hidden cursor-pointer mx-auto   flex-col dark:bg-slate-200 border border-slate-300 gap-4 min-h-fit shadow-lg rounded-xl p-4">
-            <div class="flex gap-2 ">
-                <span class="w-1/2 ">
-                    <h1 class="font-bold   ">Login</h1>
-                </span>
-                <span class="w-1/2 bg-purple-900 px-2 rounded-full grid place-items-center">
-                    <h2 class="font-bold text-slate-100">Sign In</h2>
-                </span>
-            </div>
+        <form action="" id="sign-up-form"
+            class="hidden cursor-pointer mx-auto   flex-col dark:bg-slate-200  gap-4   rounded-xl p-4">
+            
             <input type="text" name="name" id="name" placeholder="Name" class="p-1 focus:outline-purple-900 "
                 required />
 
@@ -96,10 +91,11 @@
                 class="p-1 focus:outline-purple-900 " required />
 
             <button type="submit" class="w-1/2 bg-purple-900 px-2 rounded-full grid place-items-center text-slate-100 self-center font-bold
-             ">Login
+             ">Sign Up
             </button>
-            <p class="self-end px-2">Already have account? <a href="" class="text-purple-900 font-bold">Sign In</a></p>
+            <p class="self-end px-2">Already User? <a href="" class="text-purple-900 font-bold">Login</a></p>
         </form>
+    </div>
     </div>
 
     <script src="./js/main.js"></script>
